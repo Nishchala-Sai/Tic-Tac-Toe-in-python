@@ -90,6 +90,10 @@ reset_button.pack(side="top")
 frame= Frame(window)
 frame.pack()
 
+image=Image.open("C:\\Users\\AKHILA SAI\\Desktop\\n i s h\\python\\Random_Projects\\tic tac toe.jpeg")
+icon= ImageTk.PhotoImage(image)
+window.iconphoto(True, icon)
+
 for row in range(3):
     for column in range(3):
          buttons[row][column]= Button(frame, text="", font=("consoals", 40), width=5, height=2, command=lambda row=row, column=column: next_turn(row,column)) 
